@@ -372,6 +372,22 @@ body {
   font-size: 10px;
 }
 
+/* 블로그1 */
+.blog1 img {
+  width: 100%;
+}
+.blog1 .img-retina {
+  display: none;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min-device-pixel-ratio: 1.5),
+only screen and (min-resolution: 1.5dppx) {
+    .blog1 .img-retina {display: initial;}
+    .blog1 .img-normal {display: none;}
+}
+
+
 /* 미디어쿼리 */
 /* 화면 너비 0 ~ 1220px */
 @media (max-width: 1220px) {
