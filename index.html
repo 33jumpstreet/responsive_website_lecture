@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/font-awesome.css">
   <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/lightgallery.css">
 
   <!-- !-- Facebook meta tags -->
   <meta property="og:type" content="article" />
@@ -289,8 +290,42 @@
           </article>
           <!-- // col5 -->
           <article class="column col6">
-            <h4 class="col_tit">Title</h4>
-            <p class="col_desc">이 곳은 설명 부분입니다.</p>
+            <h4 class="col_tit">Blend Effect</h4>
+            <p class="col_desc">Background-blend-mode와 mix-blend-mode</p>
+            <!-- 라이트 박스 -->
+            <div class="lightbox square clearfix">
+              <a href="img/light01_s.jpg">
+                <img src="img/light01.jpg" alt="이미지">
+              </a>
+              <a href="img/light02_s.jpg">
+                <img src="img/light02.jpg" alt="이미지">
+              </a>
+              <a href="img/light03_s.jpg">
+                <img src="img/light03.jpg" alt="이미지">
+              </a>
+              <a href="img/light04_s.jpg">
+                <img src="img/light04.jpg" alt="이미지">
+              </a>
+              <a href="img/light05_s.jpg">
+                <img src="img/light05.jpg" alt="이미지">
+              </a>
+              <a href="img/light06_s.jpg">
+                <img src="img/light06.jpg" alt="이미지">
+              </a>
+              <a href="img/light07_s.jpg">
+                <img src="img/light07.jpg" alt="이미지">
+              </a>
+              <a href="img/light08_s.jpg">
+                <img src="img/light08.jpg" alt="이미지">
+              </a>
+              <a href="img/light09_s.jpg">
+                <img src="img/light09.jpg" alt="이미지">
+              </a>
+              <a href="img/light10_s.jpg">
+                <img src="img/light10.jpg" alt="이미지">
+              </a>
+            </div>
+            <!-- // 라이트 박스 -->
           </article>
           <!-- // col6 -->
         </section>
@@ -327,32 +362,38 @@
   <script src="js/jquery.min_1.12.4.js"></script>
   <script src="js/modernizr-custom.js"></script>
   <script src="js/slick.min.js"></script>
+  <script src="js/lightgallery.min.js "></script>
   <script>
-  //이미지 슬라이더
-  $(".slider").slick({
-        dots: true,
-        autoplay: true,
-        autoplaySpeed: 3000,
-        arrows: true,
-        responsive: [
-            {
-                breakpoint: 768,
-                settings: {
-                  autoplay: false,
-                    }
-            }
-        ]
+    // 라이트 박스
+    $(".lightbox").lightGallery({
+
     });
 
-    // 공유하기
-    $(".facebook").click(function(e){
-      e.preventDefault();
-      window.open('https://www.facebook.com/sharer/sharer.php?u=' +encodeURIComponent(document.URL)+'&t='+encodeURIComponent(document.title), 'facebooksharedialog', 'menubar=no, toolbar=no, resizable=yes, scrollbars=yes, height=300, width=600'); 
-    }); 
-    $(".twitter").click(function(e){
-      e.preventDefault();
-      window.open('https://twitter.com/intent/tweet?text=[%EA%B3%B5%EC%9C%A0]%20' +encodeURIComponent(document.URL)+'%20-%20'+encodeURIComponent(document.title), 'twittersharedialog', 'menubar=no, toolbar=no, resizable=yes, scrollbars=yes, height=300, width=600');
-    });
+    //이미지 슬라이더
+    $(".slider").slick({
+          dots: true,
+          autoplay: true,
+          autoplaySpeed: 3000,
+          arrows: true,
+          responsive: [
+              {
+                  breakpoint: 768,
+                  settings: {
+                    autoplay: false,
+                      }
+              }
+          ]
+      });
+
+      // 공유하기
+      $(".facebook").click(function(e){
+        e.preventDefault();
+        window.open('https://www.facebook.com/sharer/sharer.php?u=' +encodeURIComponent(document.URL)+'&t='+encodeURIComponent(document.title), 'facebooksharedialog', 'menubar=no, toolbar=no, resizable=yes, scrollbars=yes, height=300, width=600'); 
+      }); 
+      $(".twitter").click(function(e){
+        e.preventDefault();
+        window.open('https://twitter.com/intent/tweet?text=[%EA%B3%B5%EC%9C%A0]%20' +encodeURIComponent(document.URL)+'%20-%20'+encodeURIComponent(document.title), 'twittersharedialog', 'menubar=no, toolbar=no, resizable=yes, scrollbars=yes, height=300, width=600');
+      });
 </script>
 </body>
 </body>
