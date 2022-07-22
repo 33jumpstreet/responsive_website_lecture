@@ -612,6 +612,46 @@ only screen and (min-resolution: 3dppx) {
   padding-top: 15px;
 }
 
+/* 사이드 이펙트1 */
+.side1 {
+  position: relative;
+  perspective: 600px;
+  display: block;
+}
+.side1 .front {
+  transform-style: preserve-3d;
+  transform: rotateY(0deg);
+  transition: all 0.5s ease-in-out;
+  backface-visibility: hidden;
+}
+.side1 .back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  color:#fff;
+  background: #4038dc;
+  transform: rotateY(-180deg);
+  transition: all 0.5s ease-in-out;
+  backface-visibility: hidden;
+}
+.side1 .back i {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 60px;
+}
+.side1:hover .front {
+  transform: rotateY(180deg);
+}
+.side1:hover .back {
+  transform: rotateY(0deg);
+  z-index: 1;
+}
 
 /* 미디어쿼리 */
 /* 화면 너비 0 ~ 1220px */
