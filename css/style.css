@@ -585,6 +585,34 @@ only screen and (min-resolution: 3dppx) {
   height: 100%;
 }
 
+/* 푸터 */
+.footer {
+  text-align: center;
+  padding: 30px 50px;
+}
+.footer li {
+  position: relative;
+  display: inline;
+  padding: 0 7px 0 10px;
+  white-space: nowrap;
+}
+.footer li::before {
+  content: '';
+  width: 1px;
+  height: 12px;
+  background: #dbdbdb;
+  position: absolute;
+  left: 0;
+  top: 2px;
+}
+.footer li:first-child::before {
+  width: 0;
+}
+.footer address {
+  padding-top: 15px;
+}
+
+
 /* 미디어쿼리 */
 /* 화면 너비 0 ~ 1220px */
 @media (max-width: 1220px) {
