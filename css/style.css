@@ -646,6 +646,23 @@ only screen and (min-resolution: 3dppx) {
   .nav > div ol {
     margin-bottom: 10px;
   }
+
+  #cont_right {
+    overflow: hidden;
+  }
+  #cont_right .column {
+    float: left;
+    width: 33.3333%;
+    box-sizing: border-box;
+  }
+  #cont_right .column.col7 {
+    border-right: 1px solid #dbdbdb;
+    border-bottom: 0;
+  }
+  #cont_right .column.col8 {
+    border-right: 1px solid #dbdbdb;
+    border-bottom: 0;
+  }
 }
 
 /* 화면 너비 0 ~ 768px */
@@ -728,6 +745,16 @@ only screen and (min-resolution: 3dppx) {
     border-top: 1px solid #dbdbdb;
   }
 
+  #cont_right .column {
+    width: 50%;
+  }
+  #cont_right .column.col8 {
+    border-right: 0;
+  }
+  #cont_right .column.col9 {
+    display: none;
+  }
+
   .slider figcaption {
     padding: 10px;
   }
@@ -761,6 +788,15 @@ only screen and (min-resolution: 3dppx) {
   .nav > div:last-child li {
     width: 100%;
   }
+
+  #cont_right .column {
+    width: 100%;
+  }
+  #cont_right .column.col7 {
+    border-right: 0;
+    border-bottom: 1px solid #dbdbdb;
+  }
+
   .square a {
     width: 100%;
     margin-right: 0;
