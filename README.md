@@ -1,5 +1,4 @@
-# 반응형 웹 사이트 만들기
-
+# 반응형 웹 사이트 만들기  
 > 웹스토리보이님의 유튜브 강의를 보며 실습하였습니다. 
 
 ### 1. 시맨틱 태그
@@ -11,7 +10,7 @@
 \- 웹 표준 및 접근성 향상   
 \- 검색 엔진 최적화(SEO)  
 \- 유지 보수 용이성 
-***  
+#  
 ### 2. 미디어 쿼리 
 - 정의
 \- 화면 크기에 따른 각각의 속성 값을 지정하여, 여러가지 화면을 구성하는 기술
@@ -26,13 +25,11 @@
   }
 }
 ```
-***
+#
 ### 3. 아이콘 사용하기 - fontawesome  
 - fontawesome에서 아이콘을 가져와서 사용 (예전 버전인 4.7 이용)  
 https://fontawesome.bootstrapcheatsheets.com/#  
-
-***
-
+#
 ### 4. 메타 태그 - 페이스북, 트위터 
 - 정의  
 \- 웹 서버와 웹 브라우저간에 상호 교환되는 정보를 정의하는데 사용  
@@ -56,7 +53,7 @@ https://fontawesome.bootstrapcheatsheets.com/#
   <meta name="twitter:description" content="반응형 사이트 만들기(description)." />
   <meta property="twitter:image" content="http://richclub8.dothome.co.kr/assets/ico/icon.png" />
 ```
-***
+#
 ### 5. 마우스 오버시 box-shadow로 효과 주기
 - box-shadow 속성은 박스 요소의 그림자를 설정  
 - 사용방법  
@@ -67,14 +64,14 @@ https://fontawesome.bootstrapcheatsheets.com/#
     0 0 0 100px rgba(0, 0, 0, 0.1) inset;
 }
 ``` 
----
+#
 ### 6 한줄 효과  
 ```
 overflow: hidden;
 text-overflow: ellipsis;
 white-space: nowrap;
 ```
----
+#
 ### 7. 두줄 효과
 ```
 overflow: hidden;
@@ -84,7 +81,7 @@ display: -webkit-box;
 -webkit-line-clamp: 2; // 단점: ie 지원을 안함. 
 max-height: 40px; /* ie에서도 두줄로 보이도록 따로 설정 */ 
 ```
----
+#
 ### 8. 반응형에서 이미지를 표현하는 방법  
 - 기기에 따라 단지 크기만 다른, 동일한 이미지 콘텐츠를 보여 주고 싶을 때 사용  
 - (1) srcset 설정  
@@ -130,15 +127,15 @@ https://codingcoding.tistory.com/386
 - 레티나 설명  
 https://kangraemin.github.io/ios/2021/01/21/iOS-image-set/
   
----
+#
 ### 9. slick을 이용한 이미지 슬라이더 구현 
 > 참고 사이트   
 https://kenwheeler.github.io/slick/  
----
+#
 ### 10. lightgalleryjs를 이용한 갤러리 슬라이더 구현
 > 참고사이트   
 https://www.lightgalleryjs.com/docs/settings/  
----
+#
 ### 11. filter로 이미지 보정하기 
 - 포토샵에서 사진을 보정하는 것처럼 css에서도 보정이 가능
 - 사용방법
@@ -156,7 +153,7 @@ filter: sepia(60%);
 ```
 > 참고 사이트 MDN 문서  
 https://developer.mozilla.org/ko/docs/Web/CSS/filter
----
+#
 ### 12. JS로 접고/ 펼칠 수 있는 기능 구현 
 ```
 $(".btn").click(function(e){
