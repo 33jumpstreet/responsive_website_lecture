@@ -135,7 +135,7 @@ https://kangraemin.github.io/ios/2021/01/21/iOS-image-set/
 > 참고 사이트   
 https://kenwheeler.github.io/slick/  
 ---
-### 10. LightBox를 이용한 갤러리 구현
+### 10. lightgalleryjs를 이용한 갤러리 슬라이더 구현
 > 참고사이트   
 https://www.lightgalleryjs.com/docs/settings/  
 ---
