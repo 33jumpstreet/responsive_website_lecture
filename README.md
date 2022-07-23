@@ -10,7 +10,8 @@
 - 장점    
 \- 웹 표준 및 접근성 향상   
 \- 검색 엔진 최적화(SEO)  
-\- 유지 보수 용이성
+\- 유지 보수 용이성 
+
 ***
 
 ### 2. 미디어 쿼리 
@@ -27,10 +28,13 @@
   }
 }
 ```
+
 ***
+
 ### 3. 아이콘 사용하기 - fontawesome  
 - fontawesome에서 아이콘을 가져와서 사용 (예전 버전인 4.7 이용)  
 https://fontawesome.bootstrapcheatsheets.com/#  
+
 ***
 
 ### 4. 메타 태그 - 페이스북, 트위터 
@@ -56,7 +60,9 @@ https://fontawesome.bootstrapcheatsheets.com/#
   <meta name="twitter:description" content="반응형 사이트 만들기(description)." />
   <meta property="twitter:image" content="http://richclub8.dothome.co.kr/assets/ico/icon.png" />
 ```
+  
 ***
+  
 ### 5. 마우스 오버시 box-shadow로 효과 주기
 - box-shadow 속성은 박스 요소의 그림자를 설정  
 ```
